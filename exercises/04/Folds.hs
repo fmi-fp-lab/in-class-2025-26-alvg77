@@ -291,6 +291,7 @@ validator (Just x) (Just xs) = Just (x:xs)
 validateList :: [Maybe a] -> Maybe [a]
 validateList = foldr (Just []) validator
 
+-- TODO: finish the rest some other time
 
 -- TASK:
 -- Look at the recursor for nats - foldNat. In there we replaced {Nat}'s constructors with "things".
